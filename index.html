@@ -6,7 +6,13 @@
   <title>【東京】熱門景點連結彙整 — 2A夫妻</title>
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
   <style>
-    :root{--bg:#daccc0;--card:#fff;--accent:#2a6f97}
+    :root{
+      --bg:#daccc0;
+      --card:#fff;
+      --accent:#2a6f97;
+      --kkday:#C09D9B;
+      --klook:#A9B7AA;
+    }
     html,body{height:100%;margin:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,"Noto Sans CJK TC","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--accent)}
     .wrap{max-width:980px;margin:32px auto;padding:28px}
     header{display:flex;align-items:center;gap:16px}
@@ -20,6 +26,46 @@
     .links{display:flex;flex-direction:column;gap:8px}
     a.link{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;background:var(--accent);color:#fff;font-size:14px;font-weight:bold;transition:transform 0.2s,box-shadow 0.2s, background 0.2s, color 0.2s}
     a.link:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,0.2);background:#184b6a;color:#fff}
+    /* KKday 樣式 */
+    .card.kkday h2,
+    .card.kkday a.link {
+      background: var(--kkday);
+      color: #fff;
+    }
+    .card.kkday h2 {
+      padding: 6px 10px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .card.kkday a.link {
+      background: var(--kkday);
+      color: #fff;
+    }
+    .card.kkday a.link:hover {
+      background: #a07d7a;
+      color: #fff;
+    }
+    /* Klook 樣式 */
+    .card.klook h2,
+    .card.klook a.link {
+      background: var(--klook);
+      color: #fff;
+    }
+    .card.klook h2 {
+      padding: 6px 10px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .card.klook a.link {
+      background: var(--klook);
+      color: #fff;
+    }
+    .card.klook a.link:hover {
+      background: #7b8e81;
+      color: #fff;
+    }
     .small{font-size:12px;color:#666;margin-top:10px}
     footer{margin-top:18px;font-size:13px;color:#555}
     @media (max-width:420px){.wrap{padding:16px}}
@@ -36,7 +82,7 @@
     </header>
 
     <main class="grid">
-      <section class="card">
+      <section class="card kkday">
         <h2>🌟【Kkday網路】</h2>
         <div class="links">
           <a class="link" href="https://2acouple.pse.is/6pqtuz" target="_blank" rel="noopener">eSIM</a>
@@ -45,7 +91,7 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="card kkday">
         <h2>🌟【Kkday交通】</h2>
         <div class="links">
           <a class="link" href="https://2acouple.pse.is/6pqtyz" target="_blank" rel="noopener">Skyliner京成電鐵</a>
@@ -59,7 +105,7 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="card kkday">
         <h2>🌟【Kkday門票】</h2>
         <div class="links">
           <a class="link" href="https://2acouple.pse.is/6pqu9c" target="_blank" rel="noopener">東京迪士尼</a>
@@ -72,7 +118,7 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="card kkday">
         <h2>🌟【Kkday行程】</h2>
         <div class="links">
           <a class="link" href="https://2acouple.pse.is/6pqukj" target="_blank" rel="noopener">富士山1日遊</a>
@@ -81,7 +127,7 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="card klook">
         <h2>🌍【Klook交通】</h2>
         <div class="links">
           <a class="link" href="https://2acouple.pse.is/6pquml" target="_blank" rel="noopener">Skyliner京成電鐵</a>
@@ -97,7 +143,7 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="card klook">
         <h2>🌍【Klook門票】</h2>
         <div class="links">
           <a class="link" href="https://2acouple.pse.is/6pqv9a" target="_blank" rel="noopener">東京迪士尼</a>
@@ -112,7 +158,7 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="card klook">
         <h2>🌍【Klook行程】</h2>
         <div class="links">
           <a class="link" href="https://2acouple.pse.is/6pqvj8" target="_blank" rel="noopener">富士山1日遊</a>
